@@ -1,0 +1,55 @@
+/*
+	Sitemap Styler 	 
+*/
+
+.sitemap, .sitemap ul, .sitemap li{
+	margin:1;
+	padding:1;
+	list-style:none;
+}
+.sitemap{}
+.sitemap ul{
+	display:none;
+}
+.sitemap li{
+	line-height:200%;
+	margin-top:1px;
+	background:#eee;
+	position:relative;
+	width:100%;
+}
+/* IE leaves a blank space where span is added so this is to avoid that */
+* html .sitemap li{
+	float:left;
+	display:inline;
+}
+
+/*.sitemap li ul{	
+	margin-left:28px;
+	background:url(line1.gif) repeat-y;
+}
+.sitemap li li{	
+	background:url(line2.gif) no-repeat 0 0;
+}*/
+
+.sitemap li a{padding-left:5px;}
+/*.sitemap li span{float:left;position:absolute;top:5px;left:1px;width:13px;height:13px;cursor:auto;font-size:0;}*/
+/*.sitemap li span, .sitemap li span.collapsed{background:url(collapsed.gif) no-repeat 0 0;} 
+.sitemap li span.expanded{background:url(expanded.gif) no-repeat 0 0;}*/
+
+/* second level */
+
+.sitemap li li{
+	background:#fff;
+}
+.sitemap li li a{padding-left:10px;}
+.sitemap li li span{left:0px;}
+
+/* third level */
+
+.sitemap li li li a{padding-left:18px;}
+.sitemap li li li span{left:0px;}
+
+/* etc. */
+
+/*  */
